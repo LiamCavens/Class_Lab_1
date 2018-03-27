@@ -65,8 +65,6 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Sep", ninth_month_string )
   end
 
-
-
   #Further
 
   #Given the length of a side of a cube calculate the volume
@@ -81,6 +79,21 @@ class Functions_Practice < MiniTest::Test
     #add test code here
     vol_result = sphere(5)
     assert_equal(524, vol_result)
+  end
+
+  def test_vol_cuboid()
+    vol_cuboid = cuboid(3,4,7)
+    assert_equal(84, vol_cuboid)
+  end
+
+  def test_rec_triangle()
+    vol_triangle = rec_triangle(5,6,10)
+    assert_equal(100, vol_triangle)
+  end
+
+  def test_dodecahedron()
+    vol_dodecahedron = dodecahedron(2)
+    assert_equal(61, vol_dodecahedron)
   end
 
   #Given a value in farenheit, convert this into celsius.
