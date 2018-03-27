@@ -65,8 +65,6 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Sep", ninth_month_string )
   end
 
-
-
   #Further
 
   #Given the length of a side of a cube calculate the volume
