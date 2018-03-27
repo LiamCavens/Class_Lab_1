@@ -66,3 +66,15 @@ def add_string_as_number(num_1, num_2)
     num_convert2 = num_2.to_i
     return num_convert1 + num_convert2
 end
+
+def cuboid(num_1, num_2, num_3)
+  return num_1 * num_2 * num_3
+end
+
+def rec_triangle(num_1, num_2, num_3)
+  return (num_1 * num_2 * num_3)/3
+end
+
+def dodecahedron(num_1)
+  return (((15 + (7*(Math.sqrt(5))))/4)*num_1**3).round()
+end
